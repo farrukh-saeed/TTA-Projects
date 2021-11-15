@@ -9,3 +9,11 @@ elif marks >= '60':
     print(" you got C grade")
 else:
     print("Unfortunately! you have failed the exam, Have another go")
+    print()
+    print(' Calculate your Exam results ')
+    print()
+
+resultPython = input('Enter your Python score : ')
+resultHTML = input ('Enter your HTML score : ')
+TotalResult =  int(resultPython) + int(resultHTML)
+print('Your final result is : ', TotalResult)
