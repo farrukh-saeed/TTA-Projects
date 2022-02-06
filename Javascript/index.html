@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<title> Learning JavaScript at TechTalent </title>
+</head>
+<body>
+	<h1>Welcome to JavaScript </h1>
+	<p style="font-size :2vw;"> <i>TechTalent Academy offers teaching JavaScript and other programming languages! ...  </i> </p>
+	<h2>Table of Content</h2>
+	<ul> 
+		<li>Fuctions</li>
+		<li>DOM using JavaScript</li>
+		<li>Calculate 6 Times Table</li>
+	      </ul>  
+	<h3>Lesson 1. DOM </h3>
+	<p>When a web page is loaded the browser creates a Document Object Model of the page.</p>
+	<p>DOM is a programatic interface, DOM provides using methods and other interactivity with the objects</p>
+	<div class="logIn">
+	<form>
+		<h3> Please enter details to login </h3>
+		<label for="FirstName">First name</label>
+		<input type="text" id="FirstName" name="FirstName"><br><br>
+		<label for="LastName">Last name</label>
+		<input type="text" id="LastName" name="LastName"><br><br>
+		<label for="result"> Greetings </label>
+		<input type="text" id="FullName" name="FullName"><br><br>
+
+		<!-- By pressing Greetings button, it will display the full name-->
+		<!-- Clear button will clear the greetings field -->
+		<button type="button" onclick="Greetings()"> Greetings </button>
+		<button type="button" onclick="clearText()"> Clear Greetings </button>
+	</form>
+	</div>
+
+	<h3> Lesson 2. Fuctions </h3>
+	<p>Functions are defined with the function keyword followed by parenthesis ().  </p>
+	<p>Functions are similar to prodedures which are a set of statements that performs a task or calculate a value. </p>
+	<h4> Date Function </h4>
+	<button type="button" onclick="currentDateTime()">Today's Date</button>
+	<p id="date"></p>
+
+	<h3> Lesson 3. Calculate 6 Times Table </h3>
+
+	<label for="Table Calculation">Enter Number :- </label>
+	<input type="text" id="enterNumber" placeholder="Enter number" />
+	<input type="button" id="printTable" value="Print Table"/>
+	<p class="tabledisplay" id="tabledisplaying"></p>
+	
+	<hr>
+	<!-- Lession 4 -->
+
+
+<script type= "text/javascript" src="script.js"> </script>
+</body>
+</html>
+

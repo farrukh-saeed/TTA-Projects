@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voting Program</title>
+</head>
+<body>
+	<h2> Welcome to Voting Management System </h2>
+	<h4> Check your legal age for using your right to vote </h4>
+	<p id="votingsystem">!</p>
+	
+<script>
+const age = 18; 
+var votingAge;
+
+if (age <= 18) {
+  votingAge = "Sorry, you are not old enough to vote";
+} else if (age => 18) {
+  votingAge = "yes, you are old enough to vote";
+} else {
+	votingAge = "Verify your age first for vote ";
+}
+
+document.getElementById("votingsystem").innerHTML = votingAge;
+</script>
+
+
+</body>
+</html>

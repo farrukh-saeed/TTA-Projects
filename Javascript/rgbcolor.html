@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RBG color </title>
+</head>
+<body>
+	<h2>Welcome to RGB color Program</h2>
+	<!-- button is created with id= rgb-btn-->
+	<button id="rgb-btn">Button</button>
+	<script>
+
+	 const btn = document.getElementById('rgb-btn');
+
+	let index = 0;
+
+	const colors = ['red', 'green', 'blue'];
+
+	btn.addEventListener('click', function onClick() {
+ 	btn.style.backgroundColor = colors[index];
+  	btn.style.color = 'white';
+	// looping through the array of color so everytime button clicked it will keep changing colors
+	index = index >= colors.length - 1 ? 0 : index + 1;
+	  
+	});
+  
+	</script>
+</body>
+</html>
